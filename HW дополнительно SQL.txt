@@ -1,0 +1,5 @@
+create table if not exists Employer (
+	employer_id serial primary key,
+	employer_name varchar(40) not null,
+	employer_head int references Employer(employer_id)
+);
